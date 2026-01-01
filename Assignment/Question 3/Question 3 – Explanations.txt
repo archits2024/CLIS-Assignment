@@ -1,0 +1,31 @@
+Question 3 – Explanations
+
+1. File Creation
+A file named sample_data.txt was created in the home directory and sample text was added to it to demonstrate basic file creation.
+
+2. Hard Link Creation
+A hard link named sample_hard.txt was created for sample_data.txt, pointing to the same data on disk.
+
+3. Symbolic Link Creation
+A symbolic link named sample_soft.txt was created, which references the original file by its name.
+
+4. Inode Verification
+The inode numbers of the original file, hard link, and symbolic link were displayed to compare how Linux tracks files.
+
+5. Inode Analysis
+The original file and the hard link share the same inode number because they reference the same data, while the symbolic link has a different inode as it only points to the file path.
+
+6. File Metadata Inspection
+Detailed information such as permissions, ownership, file size, and timestamps of sample_data.txt was displayed.
+
+7. Disk Usage Check
+The total disk space used by the home directory was displayed in a human-readable format.
+
+8. File Size Overview
+All files and directories in the home directory were listed along with their sizes in a readable format.
+
+9. Link Deletion Test
+The symbolic link was deleted and the original file was verified to still exist, proving that deleting a soft link does not affect the original file.
+
+10. Disk Utility Demonstration
+Disk usage commands were used to show how much space the file occupies and how storage is utilized on the filesystem.

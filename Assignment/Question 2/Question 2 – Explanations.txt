@@ -1,0 +1,20 @@
+Question 2
+1.This command creates a new directory named documents in the home directory to store project files.
+
+2.This step moves into the documents directory and creates an empty file named plan.txt.
+
+3.This step writes sample text into the plan.txt file and then displays the content to confirm it was written correctly.
+
+4.This command shows the file permissions, ownership, and other details of plan.txt, including the username.
+
+5.This command creates a duplicate of plan.txt named plan_copy.txt.
+
+6.This step renames the documents directory to project_documents to better reflect the project scope.
+
+7.This step creates a subdirectory named archive inside the project_documents directory.
+
+8.This command moves the copied file plan_copy.txt into the archive subdirectory.
+
+9.This command displays all files and subdirectories inside project_documents in a recursive manner.
+
+10.This command shows the absolute path of plan_copy.txt after it has been moved to the archive directory.

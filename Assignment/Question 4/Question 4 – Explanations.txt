@@ -1,0 +1,31 @@
+Question 4 – Explanations
+
+1. System Uptime Verification
+The system uptime command was used to display how long the system has been running since the last boot.
+
+2. User Process Listing
+All processes currently running under the logged-in user account were listed.
+
+3. CPU Usage Analysis
+Running processes were observed to identify which process was consuming the highest CPU usage.
+
+4. Background Process Execution
+A command was started in the background and its running status was verified.
+
+5. Process Priority Management
+The priority of a running process was changed and the updated niceness value was displayed.
+
+6. Memory Usage Monitoring
+Memory usage details were displayed in a human-readable format, showing used and available memory.
+
+7. Disk Space Inspection
+Disk space usage of the filesystem containing the home directory was displayed.
+
+8. Shell Identification
+The name of the currently active shell was displayed.
+
+9. Output Redirection
+System information output was redirected into a file named system_report.txt and verified.
+
+10. Disk Usage Visualization
+Since the ncdu tool was unavailable, disk usage was visualized using the du command with directory depth to show space usage by folders.
