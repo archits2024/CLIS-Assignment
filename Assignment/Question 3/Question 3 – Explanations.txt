@@ -1,31 +1,33 @@
 Question 3 – Explanations
-
 1. File Creation
-A file named sample_data.txt was created in the home directory and sample text was added to it to demonstrate basic file creation.
+A file named sample_data.txt was created in the home directory, and sample text was added to demonstrate basic file creation and content writing.
 
 2. Hard Link Creation
-A hard link named sample_hard.txt was created for sample_data.txt, pointing to the same data on disk.
+A hard link named sample_hard.txt was created for sample_data.txt. Both filenames now point to the same data block on disk.
 
 3. Symbolic Link Creation
-A symbolic link named sample_soft.txt was created, which references the original file by its name.
+A symbolic (soft) link named sample_soft.txt was created, which references the original file using its file path.
 
 4. Inode Verification
-The inode numbers of the original file, hard link, and symbolic link were displayed to compare how Linux tracks files.
+The inode numbers of sample_data.txt, sample_hard.txt, and sample_soft.txt were displayed to observe how Linux tracks files internally.
 
 5. Inode Analysis
-The original file and the hard link share the same inode number because they reference the same data, while the symbolic link has a different inode as it only points to the file path.
+sample_data.txt and sample_hard.txt share the same inode number because a hard link refers to the same inode and data.
+sample_soft.txt has a different inode because it only stores the path to the original file.
 
 6. File Metadata Inspection
-Detailed information such as permissions, ownership, file size, and timestamps of sample_data.txt was displayed.
+Detailed file information of sample_data.txt was displayed, including permissions, ownership, file size, and timestamps.
 
 7. Disk Usage Check
-The total disk space used by the home directory was displayed in a human-readable format.
+The disk usage of the home directory was displayed in a human-readable format to understand how much space it occupies.
 
 8. File Size Overview
-All files and directories in the home directory were listed along with their sizes in a readable format.
+The sizes of all files and directories in the home directory were listed in a human-readable format.
 
 9. Link Deletion Test
-The symbolic link was deleted and the original file was verified to still exist, proving that deleting a soft link does not affect the original file.
+The symbolic link sample_soft.txt was deleted and it was verified that sample_data.txt remained unaffected, proving that deleting a soft link does not remove the original file.
 
 10. Disk Utility Demonstration
-Disk usage commands were used to show how much space the file occupies and how storage is utilized on the filesystem.
+The du command was used to display disk usage of directories (for example, total size of the home directory).
+The df command was used to display filesystem-level disk usage, showing total, used, and available disk space.
+Together, du shows directory usage, while df shows filesystem capacity and availability.
