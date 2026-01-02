@@ -1,31 +1,31 @@
 Question 4 – Explanations
 
 1. System Uptime Verification
-The system uptime command was used to display how long the system has been running since the last boot.
+The uptime command was used to display how long the system has been running since the last boot, along with the number of logged-in users and the system load average.
 
 2. User Process Listing
-All processes currently running under the logged-in user account were listed.
+The ps -u $(whoami) command was used to list all processes currently running under the logged-in user account.
 
 3. CPU Usage Analysis
-Running processes were observed to identify which process was consuming the highest CPU usage.
+The top command was used to monitor running processes in real time and identify the process consuming the highest CPU usage among the user’s processes.
 
 4. Background Process Execution
-A command was started in the background and its running status was verified.
+A command (sleep 300) was started in the background using &, and its execution was verified using the job and process information.
 
 5. Process Priority Management
-The priority of a running process was changed and the updated niceness value was displayed.
+The priority (niceness) of the background process was changed using the renice command, and the updated priority value was verified using the ps command.
 
 6. Memory Usage Monitoring
-Memory usage details were displayed in a human-readable format, showing used and available memory.
+The free -h command was used to display system memory usage in a human-readable format, including total, used, free, and available memory.
 
 7. Disk Space Inspection
-Disk space usage of the filesystem containing the home directory was displayed.
+The df -h command was used to display disk space usage of the filesystem where the home directory resides, showing total, used, and available space.
 
 8. Shell Identification
-The name of the currently active shell was displayed.
+The $SHELL environment variable was displayed to identify the currently active shell, which is /bin/bash.
 
 9. Output Redirection
-System information output was redirected into a file named system_report.txt and verified.
+The output of the uname -a system information command was redirected into a file named system_report.txt and verified by displaying the file contents.
 
 10. Disk Usage Visualization
-Since the ncdu tool was unavailable, disk usage was visualized using the du command with directory depth to show space usage by folders.
+The du -h --max-depth=1 command was used to visualize disk usage of directories within the home directory, showing how much space each subdirectory occupies.
